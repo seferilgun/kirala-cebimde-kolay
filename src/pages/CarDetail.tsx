@@ -179,11 +179,11 @@ const CarDetail = () => {
           <Breadcrumb className="mb-6">
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink as={Link} to="/">Ana Sayfa</BreadcrumbLink>
+                <Link to="/" className="text-sm font-medium hover:underline">Ana Sayfa</Link>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink as={Link} to="/araclar">Araçlar</BreadcrumbLink>
+                <Link to="/araclar" className="text-sm font-medium hover:underline">Araçlar</Link>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

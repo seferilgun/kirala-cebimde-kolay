@@ -25,7 +25,7 @@ const About = () => {
           <Breadcrumb className="mb-6">
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink as={Link} to="/">Ana Sayfa</BreadcrumbLink>
+                <Link to="/" className="text-sm font-medium hover:underline">Ana Sayfa</Link>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

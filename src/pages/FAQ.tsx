@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FAQ from '@/components/FAQ';
+import { Phone } from 'lucide-react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -133,7 +134,7 @@ const FAQPage = () => {
           <Breadcrumb className="mb-6">
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink as={Link} to="/">Ana Sayfa</BreadcrumbLink>
+                <Link to="/" className="text-sm font-medium hover:underline">Ana Sayfa</Link>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
