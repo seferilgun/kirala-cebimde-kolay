@@ -94,7 +94,7 @@ const SearchForm = () => {
                 .map((loc, index) => (
                   <div
                     key={index}
-                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                    className="px-4 py-2 cursor-pointer hover:bg-gray-100 text-gray-800"
                     onClick={() => {
                       setLocation(loc);
                       setLocationFocus(false);
@@ -117,7 +117,7 @@ const SearchForm = () => {
               <PopoverTrigger asChild>
                 <Button
                   variant="outline"
-                  className="w-full justify-start text-left font-normal pl-10 relative h-12"
+                  className="w-full justify-start text-left font-normal pl-10 relative h-12 text-gray-800"
                 >
                   <Calendar 
                     size={18} 
@@ -153,7 +153,7 @@ const SearchForm = () => {
                 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" 
               />
               <div
-                className="pl-10 pr-4 py-3 w-full h-12 rounded-lg border border-gray-300 flex items-center cursor-pointer"
+                className="pl-10 pr-4 py-3 w-full h-12 rounded-lg border border-gray-300 flex items-center cursor-pointer text-gray-800 bg-white"
                 onClick={() => setTimeFocus('pickup')}
               >
                 {pickupTime}
@@ -164,7 +164,7 @@ const SearchForm = () => {
                   {hours.map((hour) => (
                     <div
                       key={hour}
-                      className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                      className="px-4 py-2 cursor-pointer hover:bg-gray-100 text-gray-800"
                       onClick={() => {
                         setPickupTime(hour);
                         setTimeFocus(null);
@@ -186,7 +186,7 @@ const SearchForm = () => {
               <PopoverTrigger asChild>
                 <Button
                   variant="outline"
-                  className="w-full justify-start text-left font-normal pl-10 relative h-12"
+                  className="w-full justify-start text-left font-normal pl-10 relative h-12 text-gray-800"
                 >
                   <Calendar 
                     size={18} 
@@ -222,7 +222,7 @@ const SearchForm = () => {
                 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" 
               />
               <div
-                className="pl-10 pr-4 py-3 w-full h-12 rounded-lg border border-gray-300 flex items-center cursor-pointer"
+                className="pl-10 pr-4 py-3 w-full h-12 rounded-lg border border-gray-300 flex items-center cursor-pointer text-gray-800 bg-white"
                 onClick={() => setTimeFocus('dropoff')}
               >
                 {dropoffTime}
@@ -233,7 +233,7 @@ const SearchForm = () => {
                   {hours.map((hour) => (
                     <div
                       key={hour}
-                      className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                      className="px-4 py-2 cursor-pointer hover:bg-gray-100 text-gray-800"
                       onClick={() => {
                         setDropoffTime(hour);
                         setTimeFocus(null);
