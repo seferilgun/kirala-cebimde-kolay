@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				carblue: {
+					50: '#f0f7ff',
+					100: '#e0eefe',
+					200: '#baddff',
+					300: '#7dbcfe',
+					400: '#3b95fb',
+					500: '#1274ed',
+					600: '#0258dd',
+					700: '#0145b1',
+					800: '#063b8f',
+					900: '#0a3574',
+					950: '#081f45',
+				},
+				carorange: {
+					50: '#fff8ed',
+					100: '#ffefd5',
+					200: '#ffdb9e',
+					300: '#ffc167',
+					400: '#fd9925',
+					500: '#fc7f07',
+					600: '#e45d02',
+					700: '#bd4006',
+					800: '#962e0d',
+					900: '#7a280f',
+					950: '#451206',
 				}
 			},
 			borderRadius: {
@@ -84,11 +111,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'fade-out': {
+					'0%': { opacity: '1' },
+					'100%': { opacity: '0' }
+				},
+				'slide-in': {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-out': 'fade-out 0.5s ease-out',
+				'slide-in': 'slide-in 0.5s ease-out'
 			}
 		}
 	},
